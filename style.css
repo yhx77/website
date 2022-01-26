@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monteserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header--container {
+    max-width: 1140px;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-color: #B28756;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .botao {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid #000;
+}
+
+.menu li a:hover, 
+.menu .active a{
+    border-bottom: 5px solid #B28756;
+}
+
+
+.botao {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    margin-left: 30px;
+}
+
+.botao input {
+    font-size: 15px;
+    border-radius: 40px;
+    border: none;
+    padding: 5px 10px;
+    outline: 0;
+    width: 100%;
+}
+
+.botao button img {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    margin-left: -25px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url(/img/Amazing\ Nature\ Wallpapers\ {Pack-108}\ \(28\).jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0 ,0, 0.8);
+}
+
+.banner .slidearea {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #B28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a {
+    display: block;
+    background-color: #B28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .sliders-pointers .pointer {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active, 
+.banner .pointer:hover
+{
+    background-color: #B28756;
+}
+
+.banner a:hover {
+    background-color: #81582a;
+}
+
+@media (min-width:450px) and (max-width:985px){
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menuMobile {
+        cursor: pointer;
+        display: block;
+        flex-direction: column;
+        margin-right: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menuMobile .mn {
+        display: flex;
+        width: 50px;
+        height: 8px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        background-color: green;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0 ,0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu .botao {
+        padding-bottom: 40px;
+        width: calc(100vw - 70vw);
+    }
+
+    .menu li.active a {
+        border: 0;
+        color: #B28756;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font: 25px;
+    }
+
+}
